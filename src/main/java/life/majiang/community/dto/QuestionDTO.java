@@ -1,16 +1,17 @@
-package life.majiang.community.model;
+package life.majiang.community.dto;
 
+import life.majiang.community.model.User;
 import lombok.Data;
 
 /**
- * @ClassName Question
+ * @ClassName QuestionDTO
  * @Description TODO
  * @Author Li Guicheng
- * @Date 2020/3/10 23:12
+ * @Date 2020/3/19 21:09
  * @Version 1.0
  **/
 @Data
-public class Question {
+public class QuestionDTO {
     private Integer id;
     private String title;
     private String description;
@@ -21,6 +22,5 @@ public class Question {
     private Integer viewCount;
     private Integer commentCount;
     private Integer likeCount;
-    
-    
+    private User user;
 }
